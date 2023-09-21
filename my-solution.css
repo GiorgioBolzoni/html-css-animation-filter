@@ -65,3 +65,116 @@
 .ex-9-img{
     transition: all 3s;
 }
+.ex-10-icon{
+    animation: spin 3s linear infinite;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(360deg);
+    }
+}
+.ex-10-icon:hover{
+    animation: spin 1s alternate infinite;
+    cursor:grab;
+}
+.ex-11-icon{
+    animation: spin-270 3s linear infinite;
+}
+@keyframes spin-270 {
+    0% {
+        transform: rotate(0);
+    }
+    90%{
+        transform: rotate(270deg);
+    }
+}
+.ex-11-icon:hover{
+    animation: spin-270 3s reverse infinite;
+    color: red ;
+}
+.ex-12-button .ex-12-top-white{
+    animation: RotateTopWhite 3s linear infinite;
+}
+@keyframes RotateTopWhite{
+    0% {
+        left: 10%;
+    }
+    50% {
+        left: calc(100% - 60px);
+    }
+    100% {
+        left: 10%;
+    }
+}
+.ex-12-button .ex-12-bottom-white{
+    animation: RotateBottomWhite 3s linear infinite;
+}
+@keyframes RotateBottomWhite{
+    0% {
+        right: 10%;
+    }
+    50% {
+        right: calc(100% - 60px);
+    }
+    100% {
+        right: 10%;
+    }
+}
+.ex-13-button .ex-13-top-white {
+    animation: RotateTopWhiteCompletely 3s linear infinite;
+}
+@keyframes RotateTopWhiteCompletely {
+    0% {
+        left: 10%;
+        top: -10px;
+    }
+    30% {
+        left: calc(100% - 30px);
+        top: -10px;
+    }
+    45% {
+        left: calc(100% - 30px);
+        top: 100%;
+    }
+    75% {
+        left: 0;
+        top: 100%;
+    }
+    90% {
+        left: -15px;
+        top: -10px;
+    }
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+}
+.ex-13-button .ex-13-bottom-white {
+    animation: RotateBottomWhiteCompletely 3s linear infinite;
+}
+@keyframes RotateBottomWhiteCompletely {
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+    30% {
+        right: calc(100% - 30px);
+        bottom: -10px;
+    }
+    45% {
+        right: calc(100% - 30px);
+        bottom: 100%;
+    }
+    75% {
+        right: 0;
+        bottom: 100%;
+    }
+    90% {
+        right: -15px;
+        bottom: -10px;
+    }
+    100% {
+        bottom: -10px;
+        right: 20%;
+    }
+}
