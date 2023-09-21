@@ -1,0 +1,67 @@
+.ex-1-square{
+    transition: background-color 3s;
+}
+.ex-1-square:hover{
+    background-color: red;
+}
+.ex-2-square:hover{
+    width: 100%;
+}
+.ex-2-square{
+    transition: width 5s;
+}
+.ex-3-square:hover{
+    border-radius: 50%;
+}
+.ex-3-square{
+    transition: border-radius 2s;
+}
+.ex-4-square:hover{
+    opacity: 0;
+}
+.ex-4-square{
+    transition: opacity 2s;
+}
+.ex-5-square:hover{
+    transform: scale(1.6);
+}
+.ex-5-square:active{
+    transform: scale(0.4);
+}
+.ex-5-square{
+    transition: all 2s ease 0.3s;
+}
+.ex-6-img:hover{
+    filter: grayscale(100%);
+}
+.ex-6-img{
+    transition: filter;
+}
+.ex-7-img:hover{
+    filter: hue-rotate(180deg);
+    transform: translate(100%);
+}
+.ex-7-img{
+    transition: all 3s;
+}
+.ex-8-img:hover{
+    border-radius: 25px;
+    transform: skewX(15deg) translate(25%);
+    filter: drop-shadow(-2px 2px 5px black) contrast(75%);
+}
+.ex-8-img{
+    transition: all 3s;
+}
+.ex-9-img:hover{
+    border-radius: 25px;
+    transform: skewX(15deg) translate(25%) scale(50%) rotate(-15deg);
+    filter: drop-shadow(-2px 2px 5px black) sepia(100%);
+}
+.ex-9-img:active{
+    border-radius: 25px;
+    transform: skewX(15deg) translate(25%) scale(150%);
+    filter: drop-shadow(-2px 2px 5px white) invert(75%) sepia(100%);
+}
+.ex-9-img{
+    transition: all 3s;
+}
